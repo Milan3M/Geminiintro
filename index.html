@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ultra Advanced Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- GSAP & ScrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+    <!-- Three.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  </head>
+  <body>
+    <!-- Preloader -->
+    <div id="preloader">
+      <div class="loader"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="container">
+        <div class="logo">
+          <a href="#">Milan Makwana</a>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section with Advanced 3D Background -->
+    <header id="hero">
+      <canvas id="three-canvas"></canvas>
+      <div class="hero-overlay"></div>
+      <div class="hero-content container">
+        <h1 class="hero-title">Welcome to My Universe</h1>
+        <p class="hero-subtitle">
+          Innovate Beyond Reality .
+        </p>
+        <a href="#contact" class="btn primary-btn">Let’s Collaborate</a>
+      </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section-title">Biography</h2>
+        <p class="section-text">
+          I’m a 22-year-old B.Com graduate from Ahmedabad, currently working as a Data Associate at WebDataGuru. I handle data analysis, quality assurance, testing, and automation tasks. Skilled in Excel and driven by a goal to become the smartest, richest, and most innovative version of myself.   </p>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+      <div class="container">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects-grid">
+          <div class="project-card">
+            <img src="image (1).jpg" alt="Project 1" />
+            <h3>Product Quality Dashboard</h3>
+            <p>
+              Created an Excel dashboard to analyze QA data, track defect trends, and reduce report time by 70%.
+            </p>
+          </div>
+          <div class="project-card">
+            <img src="assets/icons/animation.svg" alt="Project 2" />
+            <h3>Web Data Sentiment Analysis</h3>
+            <p>
+              Scraped 5,000+ online reviews and used Python to identify consumer sentiment trends across product categories.
+            </p>
+          </div>
+          <div class="project-card">
+            <img src="assets/icons/tech.svg" alt="Project 3" />
+            <h3>Resume Scoring Tool (NLP-Based)</h3>
+            <p>
+              Built a Python tool to evaluate resumes using keyword matching and formatting checks based on job descriptions.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="section">
+      <div class="container">
+        <h2 class="section-title">Testimonials</h2>
+        <div class="testimonials-slider">
+          <div class="testimonial">
+            <p>
+              "The level of interactivity and design is out of this world.
+              Truly advanced work!"
+            </p>
+            <h4>- Client Alpha</h4>
+          </div>
+          <div class="testimonial">
+            <p>
+              "This portfolio redefines digital artistry. Impressive use of 3D and
+              animations."
+            </p>
+            <h4>- Client Beta</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+      <div class="container">
+        <h2 class="section-title">Contact</h2>
+        <form id="contactForm" class="contact-form">
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+          <button type="submit" class="btn primary-btn">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2025 Ultra Advanced Portfolio. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Main JavaScript -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
